@@ -1,0 +1,163 @@
+* {
+    font-family: 'Press Start 2P';
+    font-weight: 200;
+    font-size: 12px;
+    color: #dcdbdd;
+    /* color: #f8f8ff; */
+}
+
+body {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    background-color: #2a2a2a;
+    ;
+}
+
+header {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: fit-content 1fr;
+    grid-template-rows: fit-content fit-content;
+    grid-template-areas: "about about projects" "contact contact contact";
+    /* background-color: lightslategray; */
+}
+
+h1 {
+    color: #7e737e;
+    font-size: 15px;
+}
+
+#projecTitle {
+    color: #979696;
+    font-size: 14px;
+}
+
+h2 {
+    color: dodgerblue;
+    font-size: 14px;
+    margin-left: 45px;
+}
+
+b {
+    color: #df9b6e;
+}
+
+span {
+    color: #979696;
+}
+
+a,
+a::after {
+    color: #636469;
+    transition: .5s;
+}
+
+.nes-balloon.from-left.is-dark {
+    box-shadow: 5px 6px 5px 5px #191c1fc7;
+}
+
+.about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 2fr);
+    grid-template-rows: fit-content 150px;
+    grid-template-areas: "bio bio" "pic skill";
+    justify-content: left;
+    padding-left: 10px;
+}
+
+.bio {
+    grid-area: bio;
+    margin-bottom: 25px;
+    /* background-color: red; */
+}
+
+.pic {
+    grid-area: pic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pic>p {
+    color: dodgerblue;
+    font-size: 13px;
+}
+
+#pp {
+    border: 1px solid white;
+    height: 230px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.skill {
+    grid-area: skill;
+    margin-left: auto;
+    padding: 15px;
+    /* background-color: lightsalmon; */
+}
+
+.projects {
+    grid-area: projects;
+    /* background-color: lightblue; */
+}
+
+.contact {
+    grid-area: contact;
+    /* background-color: lightgreen; */
+}
+
+.nes-container.is-rounded.is-dark.with-title {
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nes-container.is-rounded.is-dark.with-title>.title {
+    font-size: 18px;
+    color: dodgerblue;
+}
+
+.nes-progress {
+    height: 20px;
+    max-width: 350px;
+    box-shadow: 5px 6px 5px 5px #191c1fc7;
+    margin: auto;
+}
+
+.nes-list.is-circle>li::before {
+    color: #dcdbdd;
+}
+
+.nes-list.is-circle>li {
+    color: #979696;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nes-list.is-circle>p {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+/* light palette
+#002b40
+#068057
+#9ad941
+#f4ffbf
+*/
